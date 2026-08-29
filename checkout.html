@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Luxury Krown Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Luxury Krown Studios home">
+        <img src="assets/luxury-krown-logo.jpg" alt="Luxury Krown Studios logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+        <a class="icon-btn" href="cart.html" aria-label="Cart">
+          ♧<span class="cart-badge cart-count">0</span>
+        </a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Secure Checkout</div>
+        <h1>Complete Your Order</h1>
+        <p>Enter your details and confirm your Krown selection.</p>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="section">
+      <div class="container checkout-layout">
+        <!-- Delivery & Payment Form -->
+        <form class="form-card" id="checkoutForm">
+          <h2>Delivery Details</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="firstName">First name</label>
+              <input id="firstName" class="input" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="lastName">Last name</label>
+              <input id="lastName" class="input" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" class="input" type="email" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" class="input" pattern="[0-9]{10}" required>
+              <div class="error"></div>
+            </div>
+            <div class="field full">
+              <label for="address">Address</label>
+              <input id="address" class="input" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" class="input" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="pincode">PIN Code</label>
+              <input id="pincode" class="input" pattern="[0-9]{6}" required>
+              <div class="error"></div>
+            </div>
+            <div class="field full">
+              <label for="cardNumber">Card Number (demo)</label>
+              <input id="cardNumber" class="input" pattern="[0-9]{16}" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="expiry">Expiry</label>
+              <input id="expiry" class="input" placeholder="MM/YY" required>
+              <div class="error"></div>
+            </div>
+            <div class="field">
+              <label for="cvv">CVV</label>
+              <input id="cvv" class="input" pattern="[0-9]{3}" required>
+              <div class="error"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn" style="margin-top: 25px; width: 100%;">Place Order</button>
+        </form>
+
+        <!-- Order Summary Sidebar -->
+        <aside class="summary">
+          <h2>Your Order</h2>
+          <div id="checkoutItems"></div>
+          <div class="sum-row sum-total">
+            <span>Total</span>
+            <span id="checkoutTotal">₹0</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">LUXURY KROWN</div>
+          <p class="muted">Where Your Status Matters.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="products.html">All Products</a>
+          <a href="products.html">Women</a>
+          <a href="products.html">Men</a>
+          <a href="products.html">Shoes</a>
+        </div>
+        <div class="footer-col">
+          <h4>HOUSE</h4>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">My Account</a>
+          <a href="cart.html">Krown Bag</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <a href="mailto:hello@luxurykrown.com">Email Us</a>
+          <p>Vijayawada, India</p>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 Luxury Krown Studios. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
