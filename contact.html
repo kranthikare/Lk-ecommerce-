@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Luxury Krown Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Luxury Krown Studios home">
+        <img src="assets/luxury-krown-logo.jpg" alt="Luxury Krown Studios logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn">◐</button>
+        <a class="icon-btn" href="cart.html">♧<span class="cart-badge cart-count">0</span></a>
+        <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">The Studio</div>
+        <h1>Let's talk.</h1>
+        <p>Questions about products, orders, sizing or partnerships? Our team is here.</p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- Studio Details Card -->
+        <div class="contact-card reveal">
+          <div class="eyebrow">Visit / connect</div>
+          <h2>Luxury Krown Studios</h2>
+          <p class="muted">For private appointments and collaborations, reach us through the details below.</p>
+          <div class="contact-list">
+            <div>
+              <strong>Email</strong>
+              <span>hello@luxurykrown.com</span>
+            </div>
+            <div>
+              <strong>Phone</strong>
+              <span>+91 90000 00000</span>
+            </div>
+            <div>
+              <strong>Studio</strong>
+              <span>Vijayawada, Andhra Pradesh, India</span>
+            </div>
+            <div>
+              <strong>Hours</strong>
+              <span>Mon–Sat · 10:00 AM–7:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <form class="contact-card reveal" id="contactForm">
+          <div class="eyebrow">Send a message</div>
+          <h2>How can we help?</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label>Name</label>
+              <input class="input" type="text" required>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input class="input" type="email" required>
+            </div>
+            <div class="field full">
+              <label>Subject</label>
+              <input class="input" type="text" required>
+            </div>
+            <div class="field full">
+              <label>Message</label>
+              <textarea class="textarea" rows="6" required></textarea>
+            </div>
+          </div>
+          <button class="btn" type="submit" style="margin-top: 18px;">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">LUXURY KROWN</div>
+          <p class="muted">Premium fashion. Modern royalty.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="products.html">All Products</a>
+          <a href="products.html">Women</a>
+          <a href="products.html">Men</a>
+          <a href="products.html">Shoes</a>
+        </div>
+        <div class="footer-col">
+          <h4>HOUSE</h4>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">My Account</a>
+          <a href="cart.html">Krown Bag</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <a href="mailto:hello@luxurykrown.com">Email Us</a>
+          <p>Vijayawada, India</p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Luxury Krown Studios. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () =>
+      $("#contactForm")?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (e.target.checkValidity()) {
+          toast("Message sent successfully.");
+          e.target.reset();
+        }
+      })
+    );
+  </script>
+</body>
+</html>
