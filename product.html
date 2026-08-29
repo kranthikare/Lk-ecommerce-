@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Details | Luxury Krown Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Luxury Krown Studios home">
+          <img src="assets/luxury-krown-logo.jpg" alt="Luxury Krown Studios logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn">◐</button>
+        <a class="icon-btn" href="cart.html">♧<span class="cart-badge cart-count">0</span></a>
+        <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Product Detail Section -->
+    <section class="section" style="padding-top: 130px;">
+      <div class="container">
+        <div class="product-detail" id="productDetail"></div>
+      </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">You may also like</div>
+          <h2>Complete the Look</h2>
+        </div>
+        <div class="grid product-grid" id="relatedGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">LUXURY KROWN</div>
+          <p class="muted">Premium fashion. Modern royalty.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="products.html">All Products</a>
+          <a href="products.html">Women</a>
+          <a href="products.html">Men</a>
+          <a href="products.html">Shoes</a>
+        </div>
+        <div class="footer-col">
+          <h4>HOUSE</h4>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">My Account</a>
+          <a href="cart.html">Krown Bag</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <a href="mailto:hello@luxurykrown.com">Email Us</a>
+          <p>Vijayawada, India</p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Luxury Krown Studios. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => renderProducts(products.slice(2, 6), "#relatedGrid"));
+  </script>
+</body>
+</html>
