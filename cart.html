@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krown Bag | Luxury Krown Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Luxury Krown Studios home">
+        <img src="assets/luxury-krown-logo.jpg" alt="Luxury Krown Studios logo">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Account</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn">◐</button>
+        <a class="icon-btn" href="cart.html">♧<span class="cart-badge cart-count">0</span></a>
+        <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Your Selection</div>
+        <h1>Krown Bag</h1>
+        <p>Review your pieces before checkout.</p>
+      </div>
+    </section>
+
+    <!-- Cart Layout Section -->
+    <section class="section">
+      <div class="container cart-layout">
+        <div>
+          <!-- Empty Cart State -->
+          <div id="emptyCart" class="card" style="display: none; text-align: center; padding: 55px;">
+            <h2 class="serif">Your bag is empty.</h2>
+            <p class="muted">Discover your next signature piece.</p>
+            <br>
+            <a class="btn" href="products.html">Explore Collection</a>
+          </div>
+
+          <!-- Active Cart Items -->
+          <div class="cart-items" id="cartItems"></div>
+        </div>
+
+        <!-- Order Summary Sidebar -->
+        <aside class="summary">
+          <h2>Order Summary</h2>
+          <div class="sum-row">
+            <span>Subtotal</span>
+            <span id="subtotal">₹0</span>
+          </div>
+          <div class="sum-row">
+            <span>Shipping</span>
+            <span>Complimentary</span>
+          </div>
+          <div class="sum-row sum-total">
+            <span>Total</span>
+            <span id="cartTotal">₹0</span>
+          </div>
+          <a class="btn" style="width: 100%; margin-top: 20px;" href="checkout.html">Proceed to Checkout</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">LUXURY KROWN</div>
+          <p class="muted">Premium fashion. Modern royalty.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SHOP</h4>
+          <a href="products.html">All Products</a>
+          <a href="products.html">Women</a>
+          <a href="products.html">Men</a>
+          <a href="products.html">Shoes</a>
+        </div>
+        <div class="footer-col">
+          <h4>HOUSE</h4>
+          <a href="about.html">Our Story</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">My Account</a>
+          <a href="cart.html">Krown Bag</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <a href="mailto:hello@luxurykrown.com">Email Us</a>
+          <p>Vijayawada, India</p>
+        </div>
+      </div>
+      <div class="copyright">© 2026 Luxury Krown Studios. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
