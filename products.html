@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop | Luxury Krown Studios</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Luxury Krown Studios home">
+          <img src="assets/luxury-krown-logo.jpg" alt="Luxury Krown Studios logo">
+        </a>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Account</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeBtn">◐</button>
+          <a class="icon-btn" href="cart.html">♧<span class="cart-badge cart-count">0</span></a>
+          <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">The Collection</div>
+          <h1>Shop the Krown</h1>
+          <p>Search, filter and sort the complete collection.</p>
+        </div>
+      </section>
+
+      <!-- Category Section -->
+      <section class="section category-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div class="eyebrow">Shop by identity</div>
+            <h2>Choose Your Krown</h2>
+            <p>Select Men, Women or Unisex. Each category opens its own product sections.</p>
+          </div>
+          <div class="category-cards" id="categoryCards"></div>
+          <div class="subcategory-wrap" id="categoryProductsSection">
+            <div class="subcat-heading">
+              <span class="eyebrow">Collection</span>
+              <h3 id="subcategoryTitle">Choose a category</h3>
+            </div>
+            <div class="subcategory-cards" id="subcategoryCards"></div>
+            <div class="grid product-grid" id="categoryProductGrid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Filter & Listing Section -->
+      <section class="section">
+        <div class="container">
+          <div class="filters">
+            <input class="input search" id="productSearch" placeholder="Search products...">
+            <select class="select" id="categoryFilter">
+              <option value="all">All categories</option>
+              <option>Women</option>
+              <option>Men</option>
+              <option>Unisex</option>
+              <option>Shoes</option>
+              <option>Clothing</option>
+              <option>Accessories</option>
+            </select>
+            <select class="select" id="sortFilter">
+              <option value="featured">Featured</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+          <div class="grid product-grid" id="productGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">LUXURY KROWN</div>
+            <p class="muted">Premium fashion. Modern royalty.</p>
+          </div>
+          <div class="footer-col">
+            <h4>SHOP</h4>
+            <a href="products.html">All Products</a>
+            <a href="products.html">Women</a>
+            <a href="products.html">Men</a>
+            <a href="products.html">Shoes</a>
+          </div>
+          <div class="footer-col">
+            <h4>HOUSE</h4>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">My Account</a>
+            <a href="cart.html">Krown Bag</a>
+          </div>
+          <div class="footer-col">
+            <h4>CONNECT</h4>
+            <a href="mailto:hello@luxurykrown.com">Email Us</a>
+            <p>Vijayawada, India</p>
+          </div>
+        </div>
+        <div class="copyright">© 2026 Luxury Krown Studios. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
